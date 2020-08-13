@@ -2,12 +2,16 @@ body {
   margin: 0;
   padding: 0;
   background-color: #333;
-  font-family: 'Inter', sans-serif; }
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex; }
   body .header-left {
     position: fixed;
     background-color: #575757;
     height: 100%;
-    width: 3%; }
+    width: 3%;
+    top: 0;
+    left: 0; }
     body .header-left:hover {
       width: 9%; }
     body .header-left__logo {
@@ -17,7 +21,7 @@ body {
         display: flex;
         margin: auto; }
       body .header-left__logo:hover {
-        background-color: #F4EC84; }
+        background-color: #f4ec84; }
     body .header-left__items ul {
       padding: 0;
       margin-top: 0; }
@@ -45,7 +49,7 @@ body {
             body .header-left__items ul li a svg path {
               fill: #fff; }
         body .header-left__items ul li:hover {
-          background-color: #F4EC84; }
+          background-color: #f4ec84; }
           body .header-left__items ul li:hover a {
             color: #000;
             font-weight: 700; }
@@ -53,6 +57,55 @@ body {
               fill: #000; }
               body .header-left__items ul li:hover a svg path {
                 fill: #000; }
+  body .main-content {
+    padding-left: 3%;
+    width: 100%; }
+    body .main-content__presentation {
+      margin: 0 50px; }
+      body .main-content__presentation--text {
+        color: #ececec;
+        width: 50%;
+        padding-top: 100px;
+        padding-bottom: 100px; }
+        body .main-content__presentation--text h6 {
+          font-size: 18px;
+          font-weight: 500;
+          margin: 0; }
+        body .main-content__presentation--text h1 {
+          font-size: 60px;
+          font-weight: 600;
+          margin: 0; }
+        body .main-content__presentation--text h2 {
+          font-weight: 500;
+          font-size: 20px; }
+        body .main-content__presentation--text__buttons {
+          margin-top: 30px;
+          display: flex; }
+          body .main-content__presentation--text__buttons .btn-go {
+            min-width: 140px;
+            min-height: 50px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            font-size: 14px; }
+            body .main-content__presentation--text__buttons .btn-go.portfolio {
+              background: #f4ec84;
+              color: black; }
+              body .main-content__presentation--text__buttons .btn-go.portfolio:hover {
+                background: black;
+                color: #ececec; }
+            body .main-content__presentation--text__buttons .btn-go.contact {
+              border: solid 1px #f4ec84;
+              color: #ececec;
+              margin-left: 25px; }
+              body .main-content__presentation--text__buttons .btn-go.contact:hover {
+                background: black;
+                color: #ececec;
+                border-color: black; }
+      body .main-content__presentation .container__fullView {
+        min-height: 100vh; }
 
 .showMenu {
   display: block !important; }
