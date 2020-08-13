@@ -1,9 +1,12 @@
-function hoverIcon () {
-  $('.header-left__items li').mouseenter( () => {
-    // console.log($(this));
+function hoverItems () {
+  $('.header-left').mouseenter( () => {
+    $('.header-left__items ul li a p').addClass("showMenu");
+  })
+  $('.header-left').mouseleave( () => {
+    $('.header-left__items ul li a p').removeClass("showMenu");
   })
 }
 
 window.onload = function () {
-  hoverIcon ();
+  hoverItems ();
 }
