@@ -13,6 +13,7 @@ body {
     width: 3%;
     top: 0;
     left: 0;
+    transition: width 0.5s;
     &:hover {
       width: 9%;
     }
@@ -115,6 +116,7 @@ body {
             &.portfolio {
               background: #f4ec84;
               color: black;
+              transition: background 0.5s;
               &:hover {
                 background: black;
                 color: #ececec;
@@ -124,6 +126,8 @@ body {
               border: solid 1px #f4ec84;
               color: #ececec;
               margin-left: 25px;
+              transition: background 0.5s;
+              transition: border-color 0.5s;
               &:hover {
                 background: black;
                 color: #ececec;

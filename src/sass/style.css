@@ -11,7 +11,8 @@ body {
     height: 100%;
     width: 3%;
     top: 0;
-    left: 0; }
+    left: 0;
+    transition: width 0.5s; }
     body .header-left:hover {
       width: 9%; }
     body .header-left__logo {
@@ -92,14 +93,17 @@ body {
             font-size: 14px; }
             body .main-content__presentation--text__buttons .btn-go.portfolio {
               background: #f4ec84;
-              color: black; }
+              color: black;
+              transition: background 0.5s; }
               body .main-content__presentation--text__buttons .btn-go.portfolio:hover {
                 background: black;
                 color: #ececec; }
             body .main-content__presentation--text__buttons .btn-go.contact {
               border: solid 1px #f4ec84;
               color: #ececec;
-              margin-left: 25px; }
+              margin-left: 25px;
+              transition: background 0.5s;
+              transition: border-color 0.5s; }
               body .main-content__presentation--text__buttons .btn-go.contact:hover {
                 background: black;
                 color: #ececec;
