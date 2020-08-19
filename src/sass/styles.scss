@@ -14,6 +14,7 @@ body {
     top: 0;
     left: 0;
     transition: width 0.5s;
+    z-index: 1;
     &:hover {
       width: 9%;
     }
@@ -143,9 +144,9 @@ body {
           }
         }
       }
-      &--bg{
+      &--bg {
         width: 50%;
-        img{
+        img {
           width: 100%;
         }
       }
@@ -156,20 +157,22 @@ body {
         }
       }
     }
-    &__about{
+    &__about {
       color: #ececec;
       margin: 0 50px;
-      &--header{
-        &__title{
+      padding-top: 100px;
+      &--header {
+        margin-bottom: 35px;
+        &__title {
           font-weight: 700;
           font-size: 35px;
           margin: 0 0 10px;
           position: relative;
           display: inline-block;
           vertical-align: top;
-          z-index: 1;
           padding: 0 0 10px;
-          &:after{
+          text-transform: uppercase;
+          &:after {
             content: "";
             position: absolute;
             bottom: 0;
@@ -180,6 +183,58 @@ body {
             background: #f4ec84;
             width: 50px;
           }
+        }
+        &__subTitle {
+          margin: 0;
+          font-size: 14px;
+          letter-spacing: 2px;
+        }
+      }
+      &--content {
+        display: flex;
+        flex-direction: row;
+        &__socialMedia {
+          width: 35%;
+          display: grid;
+          grid-template-columns: 150px 150px;
+          grid-template-rows: 150px 150px;
+          justify-content: center;
+          margin-top: 20px;
+          .mediaBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+              background: url("../img/me_B&W.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+          .mediaSpace{
+            width: 150px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            
+            &.linkedin{
+              align-items: baseline;
+            }
+            &.instagram{
+              align-items: baseline;
+            }
+            &.github{
+              align-items: center;
+            }
+            &.medium{
+              align-items: center;
+            }
+          }
+          img {
+            width: 40px;
+          }
+        }
+        &__description {
+          width: 50%;
         }
       }
     }
