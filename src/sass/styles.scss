@@ -80,13 +80,14 @@ body {
   .main-content {
     padding-left: 3%;
     width: 100%;
-    background-image: url("../img/me.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: right;
+
     &__presentation {
+      background-image: url("../img/me.png");
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: right;
       display: flex;
-      margin: 0 50px;
+      margin: 0 0 0 50px;
       &--text {
         color: #ececec;
         width: 50%;
@@ -152,6 +153,33 @@ body {
         &__fullView {
           min-height: 100vh;
           display: flex;
+        }
+      }
+    }
+    &__about{
+      color: #ececec;
+      margin: 0 50px;
+      &--header{
+        &__title{
+          font-weight: 700;
+          font-size: 35px;
+          margin: 0 0 10px;
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          z-index: 1;
+          padding: 0 0 10px;
+          &:after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            height: 2px;
+            z-index: -1;
+            background: #f4ec84;
+            width: 50px;
+          }
         }
       }
     }
