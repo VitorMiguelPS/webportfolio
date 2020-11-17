@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   margin: 0;
   padding: 0;
@@ -73,7 +77,10 @@ body {
         color: #ececec;
         width: 50%;
         padding-top: 100px;
-        padding-bottom: 100px; }
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
         body .main-content__presentation--text h6 {
           font-size: 18px;
           font-weight: 500;
@@ -85,6 +92,8 @@ body {
         body .main-content__presentation--text h2 {
           font-weight: 500;
           font-size: 20px; }
+        body .main-content__presentation--text span {
+          margin-top: 20px; }
         body .main-content__presentation--text__buttons {
           margin-top: 30px;
           display: flex; }
@@ -158,6 +167,8 @@ body {
           display: grid;
           grid-template-columns: 150px 150px;
           grid-template-rows: 150px 150px;
+          column-gap: 20px;
+          row-gap: 20px;
           justify-content: center;
           margin-top: 20px; }
           body .main-content__about--content__socialMedia .mediaBox {
@@ -168,23 +179,29 @@ body {
               background: url("../img/me_B&W.png");
               background-repeat: no-repeat;
               background-size: cover; }
+            body .main-content__about--content__socialMedia .mediaBox.github, body .main-content__about--content__socialMedia .mediaBox.medium {
+              margin-top: 30px;
+              height: 150px; }
           body .main-content__about--content__socialMedia .mediaSpace {
-            width: 150px;
-            height: 100px;
+            width: 100%;
+            height: 100%;
             display: flex;
-            justify-content: center; }
-            body .main-content__about--content__socialMedia .mediaSpace.linkedin {
-              align-items: baseline; }
-            body .main-content__about--content__socialMedia .mediaSpace.instagram {
-              align-items: baseline; }
-            body .main-content__about--content__socialMedia .mediaSpace.github {
-              align-items: center; }
-            body .main-content__about--content__socialMedia .mediaSpace.medium {
-              align-items: center; }
+            justify-content: center;
+            align-items: center; }
           body .main-content__about--content__socialMedia img {
             width: 40px; }
         body .main-content__about--content__description {
           width: 50%; }
+  body .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #333;
+    height: 40px;
+    text-align: center; }
+    body .footer__advertise {
+      color: #fff;
+      padding: 10px 0; }
 
 .showMenu {
   display: block !important; }
