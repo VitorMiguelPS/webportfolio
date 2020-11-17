@@ -1,0 +1,19 @@
+{
+  "name": "vitormiguelpage",
+  "version": "1.0.0",
+  "description": "Repository to keep my portfolio updated",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorMiguelPS/webportfolio.git"
+  },
+  "author": "VitorMiguel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VitorMiguelPS/webportfolio/issues"
+  },
+  "homepage": "https://github.com/VitorMiguelPS/webportfolio#readme"
+}
